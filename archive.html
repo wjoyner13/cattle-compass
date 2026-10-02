@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Cattle Compass · prior versions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <main class="archive-page">
+      <a class="ghost" href="/">← Open Cattle Compass</a>
+      <h1>Prior versions</h1>
+      <p class="meta">
+        The live app uses Version 4. This page keeps the earlier cow profile cards and map views so you can reopen them anytime.
+      </p>
+
+      <section class="version-block">
+        <h2>Version 1 · Field notebook</h2>
+        <p class="meta">First pass: bordered rows and a flat green plot with numbered dots.</p>
+        <div class="gallery">
+          <div class="canvas">
+            <div class="v1-card"><span>1042 Daisy · Angus · North Pasture</span><span>OK</span></div>
+            <div class="v1-card" style="margin-top: 8px"><span>0901 Maple · Angus · Homestead</span><span>Rx</span></div>
+            <div class="v1-card" style="margin-top: 8px"><span>1188 Brisket · Hereford · Creek</span><span>Watch</span></div>
+          </div>
+          <div class="canvas">
+            <svg class="mini-map" viewBox="0 0 400 220">
+              <rect width="400" height="220" fill="#7aa05f"></rect>
+              <circle cx="80" cy="70" r="7" fill="#1c2a22"></circle>
+              <circle cx="160" cy="110" r="7" fill="#1c2a22"></circle>
+              <circle cx="250" cy="60" r="7" fill="#b5523a"></circle>
+              <circle cx="310" cy="150" r="7" fill="#c4893a"></circle>
+              <text x="16" y="28" fill="#1c2a22" font-size="12">Ranch plot</text>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="version-block">
+        <h2>Version 2 · White cards</h2>
+        <p class="meta">Photo tiles, outlined cards, and paddock rectangles on the map.</p>
+        <div class="gallery">
+          <div class="canvas">
+            <div class="v2-card">
+              <div class="avatar healthy">D</div>
+              <div>
+                <h3 style="margin: 0">Daisy</h3>
+                <div class="meta">#1042 · 1,240 lb · North Pasture</div>
+              </div>
+            </div>
+            <div class="v2-card" style="margin-top: 10px">
+              <div class="avatar treatment">M</div>
+              <div>
+                <h3 style="margin: 0">Maple</h3>
+                <div class="meta">#0901 · mastitis · Homestead Lot</div>
+              </div>
+            </div>
+          </div>
+          <div class="canvas">
+            <svg class="mini-map" viewBox="0 0 400 220">
+              <rect width="400" height="220" fill="#5c7a4d"></rect>
+              <rect x="16" y="16" width="170" height="90" fill="#6f8f5a" stroke="#fff" stroke-opacity=".3"></rect>
+              <rect x="198" y="16" width="186" height="90" fill="#7fa36a" stroke="#fff" stroke-opacity=".3"></rect>
+              <rect x="16" y="118" width="368" height="86" fill="#567848" stroke="#fff" stroke-opacity=".3"></rect>
+              <circle cx="70" cy="60" r="8" fill="#3d7a4f" stroke="white"></circle>
+              <circle cx="280" cy="55" r="8" fill="#3d7a4f" stroke="white"></circle>
+              <circle cx="120" cy="160" r="8" fill="#c4893a" stroke="white"></circle>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="version-block">
+        <h2>Version 3 · Night watch</h2>
+        <p class="meta">Dark ranch theme with gold status chips and a satellite-style map.</p>
+        <div class="gallery">
+          <div class="canvas" style="background: #0f1a14">
+            <div class="v3-card">
+              <div style="display: flex; justify-content: space-between; align-items: center">
+                <div>
+                  <h3 style="margin: 0">Maple · #0901</h3>
+                  <div class="meta" style="color: #b7c4b0">Homestead Lot · last seen just now</div>
+                </div>
+                <span class="chip">Treatment</span>
+              </div>
+            </div>
+          </div>
+          <div class="canvas" style="background: #0f1a14">
+            <svg class="mini-map" viewBox="0 0 400 220">
+              <rect width="400" height="220" fill="#1a2c20"></rect>
+              <circle cx="200" cy="110" r="90" fill="#24392b"></circle>
+              <circle cx="120" cy="80" r="6" fill="#c4a35a"></circle>
+              <circle cx="210" cy="140" r="6" fill="#3d7a4f"></circle>
+              <circle cx="280" cy="90" r="6" fill="#b5523a"></circle>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="version-block">
+        <h2>Version 4 · Current (live app)</h2>
+        <p class="meta">
+          Borderless profile sections. Diagnosis card at 15% light gray. Inputs at 7% light gray, no borders — used on notes, treatment, and full-page modals.
+        </p>
+        <div class="gallery">
+          <div class="canvas">
+            <button class="cow-card">
+              <div class="avatar healthy">D</div>
+              <div>
+                <h3>Daisy</h3>
+                <div class="meta">#1042 · Angus · North Pasture</div>
+              </div>
+              <span class="chip healthy">Healthy</span>
+            </button>
+            <section class="diagnosis" style="margin-top: 12px">
+              <h3>No active diagnosis</h3>
+              <p>Last herd check 12 Sep. BCS 6, clear eyes, even gait.</p>
+            </section>
+            <div class="field">
+              <label>Sample input</label>
+              <input value="Pulled from North Pasture." />
+            </div>
+          </div>
+          <div class="canvas">
+            <p class="meta">Open the live map in the app.</p>
+            <a class="primary" href="/" style="display: inline-block; text-decoration: none; padding: 12px 16px; border-radius: 14px"
+              >Open Cattle Compass</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
